@@ -1,12 +1,17 @@
  function insert_Row() {
             //Write your code here
           const table = document.getElementById("sampleTable");
-            
-            const newRow = table.insertRow(0);
+    const newRow = document.createElement("tr");
 
-            const newCell1 = newRow.insertCell(0);
-            const newCell2 = newRow.insertCell(1);
+    const cell1 = document.createElement("td");
+    const cell2 = document.createElement("td");
 
-            newCell1.textContent = "New cell1";
-            newCell2.textContent = "New cell2";
+    // Correct capitalization
+    cell1.textContent = "New Cell1";
+    cell2.textContent = "New Cell2";
+
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+
+    table.prepend(newRow);
         }
