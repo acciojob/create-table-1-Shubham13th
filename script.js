@@ -1,6 +1,5 @@
- function insert_Row() {
-            //Write your code here
-          const table = document.getElementById("sampleTable");
+function insert_Row() {
+    const table = document.getElementById("sampleTable");
     const newRow = document.createElement("tr");
 
     const cell1 = document.createElement("td");
@@ -13,5 +12,5 @@
     newRow.appendChild(cell1);
     newRow.appendChild(cell2);
 
-    table.prepend(newRow);
-        }
+    table.prepend(newRow); // works fine here
+}
